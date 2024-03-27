@@ -28,13 +28,25 @@ The API uses OAuth2 with JWT tokens for authentication. Obtain a token using the
 
 ## API Endpoints
 
-System Management
+### System Management
+
 GET /status
 Get the status of the API.
 
-User Management
-POST /token
-Obtain an access token.
+### Service Management
+
+`GET /status`
+
+Get the status of the API.
+
+### Route Management
+
+`POST /packages/{package_id}/calculate-route`
+
+Calculate and update the route for a specific package. Requires the package ID.
+Route Calculation Logic
+
+This section would detail how the route calculation is performed, limitations, and any external services or algorithms used.
 
 GET /users/me
 Retrieve the current user's details.
